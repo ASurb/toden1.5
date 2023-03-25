@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分享本应用</title>
+    <style type="text/css">
+ .wrapper {
+ position: relative;
+ }
+ #input {
+ position: absolute;
+ top: 0;
+ left: 0;
+ opacity: 0;
+ z-index: -10;
+ }.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px; 
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p id="text" style="text-align: center;"> <b>000</b></p>
+        <textarea id="input"></textarea>
+        <center><button onclick="copyText()" class="myButton">点击复制链接</button></center>
+        <script type="text/javascript">
+            function copyText() {
+            var text = document.getElementById("text").innerText;
+            var input = document.getElementById("input");
+            input.value = text; // 修改文本框的内容
+            input.select(); // 选中文本
+            document.execCommand("copy"); // 执行浏览器复制命令
+            alert("复制成功");
+            }
+            </script>
+</body>
+</html>

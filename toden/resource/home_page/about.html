@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <style>
+    .logo{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        animation:rotateImg 5s;
+        -webkit-animation:rotateImg 5s;
+}
+
+@keyframes rotateImg {
+    0% {transform : rotate(0deg);}
+    100% {transform : rotate(360deg);}
+  }
+  
+  @-webkit-keyframes rotateImg {
+      0%{-webkit-transform : rotate(0deg);}
+    100%{-webkit-transform : rotate(360deg);}
+  }
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px; 
+}
+    </style>
+</head>
+<body>
+  &emsp;&emsp;&emsp;&emsp;&emsp;<image class="logo" src="logo.jpg"></image>
+<br><br><br><br><br><br><br><br><br>
+<br>
+<center>
+<h3><a href="edition.html" class="myButton">版本</a></h3>
+<h3><a href="donate.html" class="myButton">捐赠</a></h3>
+    <h3><a href="share.html"class="myButton">分享本应用</a></h3>
+    </center>
+</body>
+</html>
